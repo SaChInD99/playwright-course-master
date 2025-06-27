@@ -14,7 +14,7 @@ test.describe('Contact', () => {
     //  fill out the input fields and submit
     await contactPage.submitForm(faker.name.findName(), faker.internet.email(), faker.phone.number(), faker.lorem.paragraphs(2));
 
-    // verify success message
+    // verify success message v
     await expect(contactPage.successTxt).toHaveText('Thanks for contacting us! We will be in touch with you shortly')
   })
 })
